@@ -12,4 +12,5 @@ int main (){
     printf("Tu primera nota es: %d  Tu segunda nota es: %d \n",nota1,nota2);
     intercambiar (&nota1,&nota2);
     printf("VALORES FINALES -> Nota 1: %d, Nota 2: %d\n", nota1, nota2);
+    return 0;
 }
