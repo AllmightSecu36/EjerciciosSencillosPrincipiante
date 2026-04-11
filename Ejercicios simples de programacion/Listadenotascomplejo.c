@@ -13,7 +13,7 @@ int main (){
     printf ("Cuantos estudiantes se van a registrar?\n");
     scanf ("%d",&n);
     datos lista[n];
-    for (int i=1;i<=n;i++){
+    for (int i=0;i<n;i++){
       printf ("Ingresa nombre del estudiante \n");
       scanf (" %[^\n]",lista[i].nombre);
       printf ("ingresa cedula del estudiante \n");
@@ -28,12 +28,12 @@ int main (){
             printf ("ingresa nota entre 0-20 \n");
             scanf ("%f", &lista[i].notas);
         }
-
       }while (lista[i].notas<0 || lista[i].notas>20);
-      suma=suma + lista[i].notas;
+
+      suma+= lista[i].notas;
 
       if (max<=lista[i].notas){
-        max= 0 + lista[i].notas;
+        max= lista[i].notas;
         maxcedula=0 + lista[i].cedula;
       }
       if (lista[i].notas>=10){

@@ -6,6 +6,7 @@ int main (){
     printf ("1. Consultar saldo \n");
     printf ("2. Depositar dinero \n");
     printf ("3. Retirar dinero \n");
+    printf ("4. Salir del cajero\n");
     printf ("Seleccione una opcion\n");
     scanf ("%d",&proceso);
     getchar ();
@@ -32,8 +33,12 @@ int main (){
             saldo-=suma;
         }
         break;
+    case 4:
+        printf ("Saliendo del sistema...\n");
+        return 0;
+        break;
     default:
-        printf  ("SELECCIONE UNA DE OPCION...\n");
+        printf  ("SELECCIONE UNA DE LAS 3 OPCIONES...\n");
         break;
     }
     }
