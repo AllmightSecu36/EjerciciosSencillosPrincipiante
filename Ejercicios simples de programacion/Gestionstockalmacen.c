@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main (){
-    int stock=100, sumres, opcion;
+    int stock=100, sumres, opcion, tingresado=0, tretirado=0, numoperaciones=0;
     printf("===GESTION STOCK ALMACEN DE RAM===\n");
     for (int i = 0; i < 8; i++) {
         printf("1. Consultar inventario\n");
@@ -17,12 +17,14 @@ int main (){
             printf ("Cuanta mercancia quiere agregar al inventario: \n");
             scanf ("%d",&sumres);
             stock+=sumres;
+            tingresado+=sumres;
             break;
         case 3:
             printf ("Cuanta mercancia desea retirar del inventario: \n");
             scanf ("%d",&sumres);
             if (sumres<=stock && sumres>0){
                 stock-=sumres;
+                tretirado+=sumres;
             }
             else {
                 printf ("ERROR RETIRE UNA CANTIDAD MENOR O IGUAL AL NUMERO DEL INVENTARIO\n");
@@ -30,12 +32,16 @@ int main (){
             break;
         case 4:
             printf ("Saliendo del sistema... \n");
+            numoperaciones+=1;
+            printf ("Hoy ingresaste este numero de mercancia %d, retiraste %d y realizaste %d operaciones. \n",tingresado,tretirado,numoperaciones);
             return 0;
             break;        
         default:
         printf ("Ingrese una de las 4 opciones\n");
             break;
         }
+        numoperaciones+=1;
     }
+    printf ("Hoy ingresaste este numero de mercancia %d, retiraste %d y realizaste %d operaciones. \n",tingresado,tretirado,numoperaciones);
     return 0;
 }
