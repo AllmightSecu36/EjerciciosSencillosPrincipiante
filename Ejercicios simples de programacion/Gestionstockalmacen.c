@@ -37,7 +37,7 @@ int main (){
             return 0;
             break;        
         default:
-        printf ("Ingrese una de las 4 opciones\n");
+        printf ("Ingrese una de las 4 opciones...\n");
             break;
         }
         numoperaciones+=1;
