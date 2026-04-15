@@ -11,7 +11,7 @@ int main (){
         scanf("%d", &opcion);
         switch (opcion) {
         case 1:
-            printf ("Usted tiene esta cantidad de RAM en su inventario: %d\n", stock);
+            printf ("Usted tiene esta cantidad de RAM en su inventario:  %d\n", stock);
             break;
         case 2:
             printf ("Cuanta mercancia quiere agregar al inventario: \n");
@@ -27,7 +27,7 @@ int main (){
                 tretirado+=sumres;
             }
             else {
-                printf ("ERROR RETIRE UNA CANTIDAD MENOR O IGUAL AL NUMERO DEL INVENTARIO\n");
+                printf ("ERROR, RETIRE UNA CANTIDAD MENOR O IGUAL AL NUMERO DEL INVENTARIO\n");
             }
             break;
         case 4:
