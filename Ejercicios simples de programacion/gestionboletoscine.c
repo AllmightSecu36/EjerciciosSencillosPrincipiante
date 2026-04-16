@@ -12,10 +12,10 @@ do {
     scanf ("%d",&opcion);
     switch (opcion) {
     case 1:
-        printf ("cuantos boletos deseas comprar?\n");
+        printf ("Cuantos boletos deseas comprar?\n");
         scanf ("%d",&cantidad);
         if (cantidad>capacidad){
-            printf ("ERROR NO REALIZAR VENTA\n");
+            printf ("ERROR NO SE REALIZARA LA  VENTA\n");
         }
         if (capacidad>=cantidad) {
             capacidad-=cantidad;
