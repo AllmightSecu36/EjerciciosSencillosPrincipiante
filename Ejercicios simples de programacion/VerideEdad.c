@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main () {
 int edad;
-printf ("Por favor dame su edad \n");
+printf ("Por favor deme su edad: \n");
 scanf ("%d",&edad);
 
 if (edad>18 && edad<65)
