@@ -5,8 +5,8 @@ printf ("Por favor deme su edad: \n");
 scanf ("%d",&edad);
 
 if (edad>18 && edad<65)
-    printf ("Edad valida \n");
+    printf ("Edad valida: \n");
 else
-    printf ("Edad invalida \n");
+    printf ("Edad invalida: \n");
 return 0;
 }
