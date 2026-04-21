@@ -33,7 +33,7 @@ int main (){
             return 0;  
             break;  
         default:
-            printf ("Error ingrese una de las 3 opciones\n");
+            printf ("Error ingrese una de las 3 opciones...\n");
             break;
         }
     }
