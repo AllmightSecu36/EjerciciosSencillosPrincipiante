@@ -2,7 +2,7 @@
 int main (){
     float n1, n2, n3, mayor=0, prome=0;
     int opcion;
-    printf ("===Bienvenido al sistema===\n");
+    printf ("====Bienvenido al sistema====\n");
     printf ("Ingrese 3 notas entre 0 a 20\n");
     scanf ("%f %f %f",&n1,&n2,&n3);
     while (opcion!=3){
