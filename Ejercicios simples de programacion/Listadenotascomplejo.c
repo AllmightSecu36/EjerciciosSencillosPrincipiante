@@ -10,7 +10,7 @@ char nombre[100];
 int main (){
     int n, maxcedula=0,aprobados=0,reprobados=0;
     float promedio=0,suma=0,max=0;
-    printf ("===Lista de gestion de notas=== \n");
+    printf ("====Lista de gestion de notas==== \n");
     printf ("Cuantos estudiantes se van a registrar?\n");
     scanf ("%d",&n);
     datos lista[n];
