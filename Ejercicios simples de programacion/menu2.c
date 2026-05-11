@@ -6,7 +6,7 @@ int main () {
     printf ("3 para Salir \n");
 
     while (opciones != 3) {
-      printf ("=Escoje una opcion= \n");
+      printf ("==Escoje una opcion== \n");
       scanf ("%d", &opciones);
       
       switch (opciones){
