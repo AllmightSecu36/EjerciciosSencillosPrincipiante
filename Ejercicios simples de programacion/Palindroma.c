@@ -11,7 +11,7 @@ int main (){
     char respaldo[100];//Aqui es donde se invertira la palabra
     int j;//este sera el contador de respaldo
 
-    printf(BLUE "===sistema de identificacion de palindromas o capicuas===\n" RESET);
+    printf(BLUE "===sistema de identificacion de palindromas/capicuas===\n" RESET);
     do {
 
     printf(YELLOW "Ingrese una palabra: " RESET);
@@ -30,10 +30,10 @@ int main (){
     respaldo[j] = '\0';//como no es una declaracion hago esto para cuando termine de copiar al reverso, termine con el \0 y no se buguee
 
     if (strcmp(palindroma,respaldo)==0){//aqui hago la comparacion para ver si es palindroma o no
-        printf(GREEN "Su palabra es palindroma o capicua \n" RESET);
+        printf(GREEN "Su palabra es palindroma/capicua \n" RESET);
     }
     else{
-        printf(RED "Su palabra no es palindroma o capicua \n" RESET);    
+        printf(RED "Su palabra no es palindroma/capicua \n" RESET);    
     }
 
     printf ("Desea salir del sistema?(escribe 'si' para salir)\n");//en cada ciclo te saldra esta pregunta por si quieres salir antes del sistema
