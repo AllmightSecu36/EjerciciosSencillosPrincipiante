@@ -11,7 +11,7 @@ int main (){
     char respaldo[100];//Aqui es donde se invertira la palabra
     int j;//este sera el contador de respaldo
 
-    printf(BLUE "==========sistema de identificacion de palindromas/capicuas==========\n" RESET);
+    printf(BLUE "===========sistema de identificacion de palindromas/capicuas===========\n" RESET);
     do {
 
     printf(YELLOW "Ingrese una palabra: " RESET);
