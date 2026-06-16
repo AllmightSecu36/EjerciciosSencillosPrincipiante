@@ -6,7 +6,7 @@
 
 int main () {
     int arreglo [5]= {3, 8, 7, 1, 0};
-    printf (VERDE"=Demostracion de arreglos= \n"RESET);
+    printf (VERDE"==Demostracion de arreglos== \n"RESET);
     printf (BLUE"Los elementos de el arreglo son: "RESET);
     for (int i=0 ;i<5 ;i++){
         printf (AMARILLO"%d  ",arreglo[i],RESET);
